@@ -22,20 +22,15 @@ void caesar (int key, char message[])
 {
   // this function assumes that spaces are the only non alphabet chars in the string
   // and also that all chars are lowercase
-  int i = 0;
-  int j = 0;
-  int x = strln(message[]);
+  int i, j;
+  int x = strlen(message[]);
 
-  for (j < key, j++)
-  {
-    for (i < x, i++)
-    {
-      if (message[i] != ' ' && message[i] != 'z')
-      {
+  for (j = 0; j < key; j++)  {
+    for (i = 0; i < x; i++)  {
+      if (message[i] != ' ' && message[i] != 'z') {
         message[i] = message[i]++;
       }
-      if (message[i] == 'z')
-      {
+      if (message[i] == 'z')  {
         message[i] = 'a';
       }
       i++;
