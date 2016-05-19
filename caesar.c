@@ -14,8 +14,8 @@ int main()
   int key = 3; // or write in scanf for key (or not)
   // char message[] = scanf("Enter message to be decyphered: ")
   // char message[] = "Sp S rkn kcuon zoyzvo grkd droi gkxdon, droi gyevn rkfo cksn pkcdob rybcoc."
-  char message[] = "abcdefghi j k l m n o p q r s t u v w x y z"
-  caesar (key, message[])
+  char message[] = "abcdefghi j k l m n o p q r s t u v w x y z";
+  caesar (key, message[]);
 }
 
 void caesar (int key, char message[])
@@ -24,17 +24,17 @@ void caesar (int key, char message[])
   // and also that all chars are lowercase
   int i = 0;
   int j = 0;
-  int x = strln(message[])
+  int x = strln(message[]);
 
   for (j < key, j++)
   {
     for (i < x, i++)
     {
-      if (message[i] != ' ' && message[i] != 'z');
+      if (message[i] != ' ' && message[i] != 'z')
       {
         message[i] = message[i]++;
       }
-      if (message[i] == 'z');
+      if (message[i] == 'z')
       {
         message[i] = 'a';
       }
@@ -42,7 +42,7 @@ void caesar (int key, char message[])
     }
   }
 
-  printf("%s", message[])
+  printf("%s", message[]);
 
 }
 
