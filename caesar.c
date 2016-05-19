@@ -21,20 +21,25 @@ int main()
 void caesar (int key, char message[])
 {
   // this function assumes that spaces are the only non alphabet chars in the string
+  // and also that all chars are lowercase
   int i = 0;
   int j = 0;
+  int x = strln(message[])
 
   for (j < key, j++)
   {
-    if (message[i] != ' ' && message[i] != 'z');
+    for (i < x, i++)
     {
-      message[i] = message[i]++;
+      if (message[i] != ' ' && message[i] != 'z');
+      {
+        message[i] = message[i]++;
+      }
+      if (message[i] == 'z');
+      {
+        message[i] = 'a';
+      }
+      i++;
     }
-    if (message[i] == 'z');
-    {
-      message[i] = 'a';
-    }
-    i++;
   }
 
   printf("%s", message[])
