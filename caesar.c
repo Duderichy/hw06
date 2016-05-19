@@ -12,16 +12,19 @@ void caesar (int key, char message[]);
 int main()
 { //Take input of the message or have it late in program???
   int key = 3; // or write in scanf for key (or not)
-  // char message = scanf("Enter message to be decyphered: ")
-  char message = "Sp S rkn kcuon zoyzvo grkd droi gkxdon, droi gyevn rkfo cksn pkcdob rybcoc."
-  caesar (int key, char message[])
+  // char message[] = scanf("Enter message to be decyphered: ")
+  // char message[] = "Sp S rkn kcuon zoyzvo grkd droi gkxdon, droi gyevn rkfo cksn pkcdob rybcoc."
+  char message[] = "abcdefghi j k l m n o p q r s t u v w x y z"
+  caesar (key, message[])
 }
 
 void caesar (int key, char message[])
 {
   // this function assumes that spaces are the only non alphabet chars in the string
   int i = 0;
-  for ()
+  int j = 0;
+
+  for (j < key, j++)
   {
     if (message[i] != ' ' && message[i] != 'z');
     {
@@ -31,8 +34,11 @@ void caesar (int key, char message[])
     {
       message[i] = 'a';
     }
-    i++
+    i++;
   }
+
+  printf("%s", message[])
+
 }
 
 
