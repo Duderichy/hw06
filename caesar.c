@@ -2,6 +2,8 @@
 The purpose of this program is to take an input of a string that is encrypted
 using a caesar cipher and brute force the original message by printing all
 possible original messages
+
+The last printed statement will be the wanted ciphered message
 */
 
 #include <stdio.h>
