@@ -19,17 +19,17 @@ int main()
 
 void caesar (int key, char message[])
 {
-  // this function assumes that spaces are the only non alphabet items in the string
+  // this function assumes that spaces are the only non alphabet chars in the string
   int i = 0;
   for ()
   {
-    if (message[i] != ' ' && message[i] != 'z')
+    if (message[i] != ' ' && message[i] != 'z');
     {
-      message[i] = message[i]++
+      message[i] = message[i]++;
     }
-    if (message[i] == 'z')
+    if (message[i] == 'z');
     {
-      message[i] = 'a'
+      message[i] = 'a';
     }
     i++
   }
