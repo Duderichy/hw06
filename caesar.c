@@ -34,16 +34,12 @@ void caesar (int key, char message[])
       if (message[i] != ' ' && message[i] != 'z' && message[i] != ',' && message[i] != '.' && message[i] != 'Z') {
         message[i]++;
       }
-      else  {
-        k = 1;
-      }
-      if (message[i] == 'z' && k)  {
+      else if (message[i] == 'z')  {
         message[i] = 'a';
       }
-      if (message[i] == 'Z' && k)  {
+      else if (message[i] == 'Z')  {
         message[i] = 'A';
       }
-      k = 0;
     }
     printf("%s\n", message);
   }
