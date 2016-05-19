@@ -11,33 +11,35 @@ void caesar (int key, char message[]);
 
 int main()
 { //Take input of the message or have it late in program???
-  int key = 3; // or write in scanf for key (or not)
+  int key = 26; // or write in scanf for key (or not)
   // char message[] = scanf("Enter message to be deciphered: ")
-  // char message[] = "Sp S rkn kcuon zoyzvo grkd droi gkxdon, droi gyevn rkfo cksn pkcdob rybcoc."
-  char message[] = "abcdefghi j k l m n o p q r s t u v w x y z";
+  char message[] = "Sp S rkn kcuon zoyzvo grkd droi gkxdon, droi gyevn rkfo cksn pkcdob rybcoc.";
+  // char message[] = "abcdefghi j k l m n o p q r s t u v w x y z";
   caesar (key, message);
 }
 
 void caesar (int key, char message[])
 {
 
-  // this function assumes that spaces are the only non alphabet chars in the string
+  // this function assumes that spaces, commas, and periods are the only non alphabet chars in the string
   // and also that all chars are lowercase
 
-  int i, j, k;
+  int i, j, k = 0;
   int x = strlen(message);
 
   for (j = 0; j < key; j++)  {
     for (i = 0; i < x; i++)  {
-      if (message[i] != ' ' && message[i] != 'z') {
+      if (message[i] != ' ' && message[i] != 'z' && message[i] != ',' && message[i] != '.' && message[i] != 'Z') {
         message[i]++;
       }
       else  {
         k = 1;
       }
-
       if (message[i] == 'z' && k)  {
         message[i] = 'a';
+      }
+      if (message[i] == 'Z' && k)  {
+        message[i] = 'A';
       }
       k = 0;
     }
