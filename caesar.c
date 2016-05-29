@@ -4,6 +4,10 @@ using a caesar cipher and brute force the original message by printing all
 possible original messages
 
 The last printed statement will be the wanted ciphered message
+
+key sets the "key" of the caesar cipher, in order to unencypt this program
+support using brute force by setting key to 26 or you can unencypt by setting
+the key to 26 minus encryption key
 */
 
 #include <stdio.h>
@@ -16,7 +20,7 @@ int main()
   int key = 26; // or write in scanf for key (or not)
   // char message[] = scanf("Enter message to be deciphered: ")
   char message[] = "Sp S rkn kcuon zoyzvo grkd droi gkxdon, droi gyevn rkfo cksn pkcdob rybcoc.";
-  // char message[] = "abcdefghi j k l m n o p q r s t u v w x y z";
+  // char message[] = "abcdefghi j k l m n o p q r s t u v w x y z"; debugging statement
   caesar (key, message);
 }
 
